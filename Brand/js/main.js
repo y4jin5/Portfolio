@@ -3,9 +3,15 @@
     $(document).ready(function() {
       $('.loading').show();
     });
-    $(window).load('load', function() {
+    $(window).on('load', function() {
       $('.loading').hide();
     });
+    // $(document).ready(function() {
+    //     $('.loading').show();
+    //   });
+    //   $(window).load(function() {
+    //     $('.loading').hide();
+    //   });
 
 //loading end
 // scroll logo menu
