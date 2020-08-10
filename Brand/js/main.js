@@ -3,7 +3,7 @@
     $(document).ready(function() {
       $('.loading').show();
     });
-    $(window).on('load', function() {
+    $(window).load('load', function() {
       $('.loading').hide();
     });
 

@@ -1,0 +1,29 @@
+김포 조별과제 포트폴리오 제출
+1. UI 디자인
+https://nyuuuu222.github.io/Portfolio/UIUXDesign/UIDesign.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/UIUXDesign
+2. 조별과제
+https://nyuuuu222.github.io/Portfolio/TeamProject/modal.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/TeamProject
+3. 브랜드사이트
+https://nyuuuu222.github.io/Portfolio/Brand/index.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/Brand
+4. 자동차사이트
+https://nyuuuu222.github.io/Portfolio/Car/index.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/Car
+5. 날씨앱
+https://nyuuuu222.github.io/Portfolio/WeatherApp/index.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/WeatherApp
+6. 상세페이지
+https://nyuuuu222.github.io/Portfolio/DetailPage/DetailPage.html
+https://github.com/Nyuuuu222/Portfolio/tree/master/DetailPage
+
+
+
+
+
+
+
+
+
+6. 랜딩페이지(영화,드라마등)
