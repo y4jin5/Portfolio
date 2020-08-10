@@ -1,0 +1,158 @@
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+
+
+    
+    }
+    
+    /*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    ##Device = 랩탑, 데스크탑
+    ##Screen = 1025px에서 1280px 사이
+    */
+    
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    
+       /* section03 start */
+            .section03 .sec_03{
+                /* padding: 4% 0; */
+            }
+            .sec03_nav_box{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .sec03_nav_box>.nav-tabs{
+                padding-top: 7%;
+            }
+            .sec03_row1{
+                margin-top: -2%;
+            }
+
+        /* section04 start */
+
+            .sec04_main_txt{
+                padding: 2% 0;
+            }
+            .sec04_main_txt h1{
+                font-size: 50px;
+                font-weight: 900;
+                letter-spacing: 5px;
+            }
+            .sec04_main_txt>p{
+                font-size: 18px;
+                padding-bottom: 0%;
+            }
+
+            .sec04_img{
+                width: 100%;
+            }
+            .point .dot{
+                width: 12px;
+                height: 12px;
+            }
+            .point.point-11{
+                top: 32.5%;
+                left: 75.7%;
+            }
+            .point.point-12{
+                top: 38%;
+                left: 86%;
+            }
+            .sec04_show{
+                display: none;
+            }
+            .sec04_none{
+                display: block !important;
+            }
+        /* section07 start */
+            .sec07_main_txt{
+                padding-top: -1%;
+            }
+            .sec07_main_txt>.p2{
+                /* padding: 1%; */
+                display: n;
+            }
+            .sec07_box{
+
+            }
+            .sec07_box img{
+
+            }
+            .ba-slider{
+                width: 100%;
+            }
+            .resize{
+                height: 150%;
+            }
+            
+            .bottom_txt{
+                text-align: center;
+                padding: 0;
+                width: 100%;
+            }
+            .bottom_txt>h3{
+                font-size: 20px;
+            }
+            .bottom_txt>p{
+                font-size: 15px;
+            }
+    }
+    
+    /*
+    ##Device = Tablets, Ipads (portrait),
+    ##Screen = B/w 768px to 1024px
+    ##Device = 태블릿, 아이패드(세로),
+    ##Screen = 768px에서 1024px 사이
+    */
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    
+    }
+    
+    /*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    ##Device = 태블릿, 아이패드(가로)
+    ##Screen = 768px에서 1024px 사이
+    */
+    
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    
+    }
+    
+    /*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    ##Device = 저해상도 태블릿, 모바일(가로)
+    ##Screen = 481px에서 767px 사이
+    */
+    
+    @media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    
+    }
+    
+    /*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+    ##Device = 대부분의 스마트폰 모바일 기기(세로)
+    ##Screen = 320px에서 479px 사이
+    */
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+    
+    }

@@ -1,0 +1,298 @@
+/* @font-face { font-family: 'SDKukdetopokki'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff') format('woff'); font-weight: normal; font-style: normal; } */
+@font-face { font-family: 'KBIZHanmaumMyungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* logo fixed */
+.logo_box{
+    position: fixed;
+    z-index: 999;
+    top: 2%;
+    left: 1%;
+}
+.section01{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main_img{
+    background: url('../img/sososo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 86.5vh;
+    width: 100%;
+    padding-top: 40px;
+}
+.main_txt_bg{
+    background: #ccc;
+    opacity: 0.6;
+    width: 100%;
+    height: 30vh;
+}
+.main_img_title{
+    margin-top: 1%;
+    height: 40%;
+    padding-bottom: 70px;
+    background-color: rgba(34, 32, 32, 0.301);
+}
+.main_letter1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 800;
+    padding-top: 2%;
+    letter-spacing: 20px;
+}
+.main_letter2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 800;
+}
+
+.main_letter3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+}
+.main_letter3_none{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+
+}
+
+.main_icon{
+    padding: 1% 0;
+    background: #ccc;
+}
+.row>.col-sm-12{
+    color: #fff;
+}
+.main_icon_txt1{
+    border-right: solid rgb(167, 167, 167) 1px;
+    
+}
+.main_icon_txt2{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+.main_icon_txt3{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+
+
+.main_icon .col-sm-3 .col-sm-12{
+    color: #242424;
+}
+
+.logo_box img{
+    width: 200px;
+    margin-top: -2%;
+    margin-left: 0.5%;
+}
+
+
+/* section01 end */
+
+
+/* section02 start */
+
+.section02{
+    background: #f5f2f1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tab-car-img img{
+}
+
+
+.tab-car-color-text>ul>li{
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 2% 4%;
+}
+.tab-car-color-text>ul{
+    display: flex;
+    padding: 0 10%;
+}
+.r2t,.e2r,.q2w,.j2f,.a2s,.y2b{
+    display: none;
+}
+.tab-car-img img{
+}
+.tab-car-color-text a{
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+#wc9{
+    background: url('../img/01.png');
+
+}
+#r2t{
+    background: url('../img/02.png');
+}
+
+#e2r{
+    background: url('../img/03.png');
+}
+#q2w{
+    background: url('../img/04.png');
+}
+#j2f{
+    background: url('../img/05.png');
+}
+#a2s{
+    background:url('../img/06.png');
+}
+#y2b{
+    background: url('../img/07.png');
+}
+
+
+.wc9{
+    color: #cbcacd;
+}
+.r2t{
+    color: #7d7f85;
+}
+
+.e2r{
+    color: #7d7f85;
+}
+.q2w{
+    color: #2e343b;
+}
+.j2f{
+    color: #162640;
+}
+.a2s{
+    color: #121416;
+}
+.y2b{
+    color: #4a060b;
+}
+
+.color-txt{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-left: -4.3%;
+}
+.color-txt>li>p{
+    font-family: 'KBIZHanmaumMyungjo';
+
+}
+.color-txt>ul>li{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+.color-main-txt{
+    margin-top: 3%;
+}
+.color-main-txt>h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #333333;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.color-main-txt>h4{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 30px;
+    color: rgb(102, 102, 102);
+
+}
+.color-add-txt{
+    /* padding-left: 6%; */
+    padding-top: 0;
+    color: rgb(179, 179, 179);
+}
+
+/* section02 end */
+
+/* section03 start */
+.section03{
+    font-family: 'KBIZHanmaumMyungjo';
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+
+}
+.sec03_row1{
+    margin-top: 2%;
+}
+.section03 h1{
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.section03 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+.sec03_main>img{
+    /* border: 1px solid #242424; */
+    border-radius: 20%;
+}
+.sec03_bottom{
+    margin-top: -2.9%;
+    background: #242424;
+    z-index: 99999999;
+    border-radius: 20%;
+}
+
+.sec03_bottom>.row>.col-sm-3{
+    margin: 0;
+    padding: 0;
+}
+.sec03_bottom img{
+    border: 10px #242424 solid;
+    border-radius: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

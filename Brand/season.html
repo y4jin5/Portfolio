@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>이참외 과일 사과ss</title>
+
+  <!-- Favicons -->
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/icofont.min.css" rel="stylesheet">
+  <link href="css/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="css/venobox.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/zoomslider.css">
+
+  <!-- Template Main CSS File -->
+  <link href="css/css.css" rel="stylesheet">
+
+
+  <style>
+    body {
+  margin: 0;
+}
+
+/* h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+} */
+h1{
+    position: absolute;
+    margin: 0;
+    top: calc(30% - 50px);
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: 100px;
+    color: white;
+    font-size: 5rem;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+    margin-top: -5%;
+}
+
+p {
+  margin: 0 60px;
+  font-weight: 300;
+}
+
+.season_overay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+section {
+  width: 100%;
+  padding: 60px 0;
+  background: white;
+}
+
+
+.season_page {
+  padding: 0;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+
+}
+
+.season_page:first-child {
+  height: 300px;
+  min-height: inherit;
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+}
+.season_letter{
+    z-index: 1;
+  position: relative;
+  /* background: #282E34; */
+  /* color: white; */
+  font-size: 1rem;
+  line-height: 2em;
+  padding: 3rem;
+  margin: 0;
+  display: flex;
+}
+    /* tab menu start */
+
+.tab-wrapper {
+  margin: 60px auto;
+  width: 100%;
+  /* max-width:519px; */
+}
+.tab-menu{
+    position: absolute;
+    left: 0;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999999;
+
+}
+.tab-menu li {
+  position:relative;
+  /* background-color: #fff; */
+  color:#bcbcbc;
+  display: inline-block;
+  padding: 20px 40px;
+  opacity: 0.8;
+  cursor:pointer;
+  z-index:0;
+}
+
+.tab-menu li:hover {
+  color:#464646;
+}
+
+.tab-menu li.active {
+  color:#464646;
+  opacity: 1;
+}
+
+.tab-menu li.active:hover {
+  color:#464646;
+}
+
+.tab-content>div {
+  background-color: #fff;
+  box-sizing:border-box;
+  width: 100%;
+  /* padding: 50px;    */
+  min-height:200px;
+}
+
+.line {
+  position:absolute;
+  width: 0;
+  height: 7px;
+  background-color: rgb(245, 159, 79);
+  top: 0;
+  left: 0;
+}
+
+.letter{
+  width: 260px;
+  height: 60px;
+  background:rgba(153, 100, 51, 0.432);
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-align: center;
+  position: absolute;
+  /* margin-top: 10%; */
+  /* margin-left: 24%; */
+  padding: 0.2% 0;
+}
+
+/* tab menu end */
+  </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="#" class="logo_main"><img src="img/200.png" alt="logo"></a>
+      </div>
+  
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-transparent">
+      <div class="container text-center">
+        <nav class="nav-menu d-none d-lg-block">
+          <ul class="text-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="season.html">Season</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header><!-- End Header -->
+     
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Season</h2>
+          <ol>
+            <li><a href="index.html" class="txt_sub">Home</a></li>
+            <li>Season</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+    
+<!-- tab menu start -->
+
+
+  <div class="tab-wrapper">
+  
+    <ul class="tab-menu">
+      <li class="active"><a href="#">SPRING</a></li>
+      <li><a href="#">SUMMER</a></li>
+      <li><a href="#">FALL</a></li>
+      <li><a href="#">WINTER</a></li>
+    </ul>
+    
+    <div class="tab-content">
+        <div>
+            <!-- spring start-->
+
+<section class="season_page" style="background-image: url('img/eugene-zhyvchik-YdE0i14Oy8M-unsplash.jpg');">
+    <div class="season_overay">
+      <h1>Spring</h1>
+    </div>
+</section>
+<section class="season_letter">
+    <p>봄</p>
+</section>
+
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/richard-barnard-MUZYsXRYhyA-unsplash.jpg'); background-size: cover;">
+    <!-- <div class="letter">
+      토마토
+    </div> -->
+  </section>
+  <section>
+    <p>슈퍼. </p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/gianluca-gerardi-BnRTS550Lzc-unsplash.jpg');">
+    <!-- <div class="letter">
+      딸기
+    </div> -->
+  </section>
+  <section>
+    <p>딸기는 대</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/ki-woong-qldt2ZnxLJE-unsplash.jpg');">
+    <!-- <div class="letter">
+      골드키위
+    </div> -->
+  </section>
+  <section>
+    <p>뉴</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/tim-mossholder-S3gNA0HQZo8-unsplash (1).jpg'); background-size: cover;">
+    <!-- <div class="letter">
+      매실
+    </div> -->
+  </section>
+  <section>
+    <p>"봄
+    </p>
+  </section>
+  
+  
+
+
+<!-- spring end -->
+        </div>
+        <div>
+<!-- summer start-->
+
+<section class="season_page" style="background-image: url('img/element5-digital-acrBf9BlfvE-unsplash.jpg');">
+    <div class="season_overay">
+      <h1>Summer</h1>
+    </div>
+  </section>
+  <section class="season_letter">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
+      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
+      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/pu-far-jXtV7qxtxfY-unsplash.jpg');">
+    <div class="letter">
+      복숭아
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
+      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
+      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
+      cupiditate aspernatur.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/brooke-lark-3A1etBW5cBk-unsplash.jpg');">
+    <div class="letter">
+      파인애플
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
+      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
+      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
+      non, ea suscipit.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/amy-shamblen-euqiHwS38Rw-unsplash.jpg');">
+    <div class="letter">
+      수박
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
+      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
+      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/eiliv-sonas-aceron-k9X5yGle-NA-unsplash.jpg');">
+    <div class="letter">
+      바나나
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
+      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
+      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
+      expedita dicta fuga!</p>
+  </section>
+  
+<!-- summer end -->
+        </div>
+        <div>
+<!-- fall start-->
+
+<section class="season_page" style="background-image: url('img/jodie-morgan-t5KTjPSfdxg-unsplash.jpg');">
+    <div class="season_overay">
+      <h1>Fall</h1>
+    </div>
+  </section>
+  <section class="season_letter">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
+      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
+      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/estudio-bloom-Al0geA4zDqw-unsplash.jpg');">
+    <div class="letter">
+      감
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
+      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
+      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
+      cupiditate aspernatur.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/tim-chow-9cVdAJnwSac-unsplash.jpg');">
+    <div class="letter">
+      무화과
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
+      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
+      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
+      non, ea suscipit.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/close-up-photography-of-apples-672101.jpg');">
+    <div class="letter">
+      사과
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
+      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
+      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/khloe-arledge-gHIABZ6roh0-unsplash.jpg');">
+    <div class="letter">
+      배
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
+      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
+      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
+      expedita dicta fuga!</p>
+  </section>
+  
+
+
+
+
+
+
+  
+
+
+<!-- fall end -->
+        </div>
+        <div>
+<!-- winter start-->
+
+<section class="season_page" style="background-image: url('img/stefan-cosma-IDZWGBMUklo-unsplash.jpg');">
+    <div class="season_overay">
+      <h1>Winter</h1>
+    </div>
+  </section>
+  <section class="season_letter">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
+      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
+      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/aliona-gumeniuk-YJ7dFJTHEjI-unsplash.jpg');">
+    <div class="letter">
+      귤
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
+      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
+      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
+      cupiditate aspernatur.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/chaman-raj-NxwWip3Q4OQ-unsplash.jpg');">
+    <div class="letter">
+      석류
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
+      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
+      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
+      non, ea suscipit.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/yellow-lemon-food-produce-fruit-citric-acid-1545675-pxhere.com.jpg');">
+    <div class="letter">
+      유자
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
+      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
+      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
+  </section>
+  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/monika-grabkowska-WJohV6oUoIc-unsplash.jpg');">
+    <div class="letter">
+      체리
+    </div>
+  </section>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
+      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
+      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
+      expedita dicta fuga!</p>
+  </section>
+  
+
+
+
+
+
+
+  
+
+
+<!-- winter end -->
+        </div>
+    </div><!-- //tab-content -->
+    
+</div><!-- //tab-wrapper -->
+
+<!-- tab menu end -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h4>이.과.사. 주간지 구독하기</h4>
+                <p>지금 바로 이.과.사.에서 제공되는 과일 관련 정보 주간지를 구독하세요!<br>다양한 정보와 할인 혜택을 제공합니다.</p>
+              </div>
+              <div class="col-lg-6">
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="button" value="Subscribe" class="often_click">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>이참외 과일 사과</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">회사명 : 이참외 과일 사과㈜</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">대표자 : 김은영</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">주소 : 경기도 김포시 마산동 672-3</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">이메일 : lolollll1025@gmail.com</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">사업자등록정보 : xxx-xx-xxxxx</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Different Projects</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="https://nyuuuu222.github.io/webd/realhome/home/modal.html">Team Project - PajuBookCity</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="https://nyuuuu222.github.io/webd/realcar/index.html">Hyundai Car</a></li>
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">aaa</a></li> -->
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">bbb</a></li> -->
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">ccc</a></li> -->
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <!-- <h4>Different Projects</h4> -->
+                <p>
+                  <!-- A108 Adam Street <br>
+                  New York, NY 535022<br>
+                  United States <br><br>
+                  <strong>Phone:</strong> +1 5589 55488 55<br>
+                  <strong>Email:</strong> info@example.com<br> -->
+                </p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-info">
+                <h3>Web Design Project</h3>
+                <p>Kim Eun Young</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+    
+      <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+
+    <!-- Vendor JS Files -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.zoomslider.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- <script src="js/php-email-form/validate.js"></script> -->
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/aos.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+    <!-- tab menu -->
+<script>
+  $(document).ready(function() {
+
+var $wrapper = $('.tab-wrapper'),
+$allTabs = $wrapper.find('.tab-content > div'),
+$tabMenu = $wrapper.find('.tab-menu li'),
+$line = $('<div class="line"></div>').appendTo($tabMenu);
+
+$allTabs.not(':first-of-type').hide();  
+$tabMenu.filter(':first-of-type').find(':first').width('100%')
+
+$tabMenu.each(function(i) {
+$(this).attr('data-tab', 'tab'+i);
+});
+
+$allTabs.each(function(i) {
+$(this).attr('data-tab', 'tab'+i);
+});
+
+$tabMenu.on('click', function() {
+
+var dataTab = $(this).data('tab'),
+$getWrapper = $(this).closest($wrapper);
+
+$getWrapper.find($tabMenu).removeClass('active');
+$(this).addClass('active');
+
+$getWrapper.find('.line').width(0);
+$(this).find($line).animate({'width':'100%'}, 'fast');
+$getWrapper.find($allTabs).hide();
+$getWrapper.find($allTabs).filter('[data-tab='+dataTab+']').show();
+});
+
+});//end ready
+</script>
+</body>
+
+</html>

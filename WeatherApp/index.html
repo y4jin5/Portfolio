@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="gradient">
+    <div id="weather_info"> 
+        <!-- <i class="icon wi"></i> -->
+        <!-- <i class="owf owf-200"></i> -->
+        <section>
+            <div class="icon_box">
+                <figure class="icon"></figure>
+                <p class="w_id"></p>
+            </div>
+            <div class="body_top">
+                <p class="temp"></p>
+            </div>
+            <div class="line_box">
+                <div class="line_1"></div>
+                <p id="time_result"></p>
+                <div class="line_2"></div>
+            </div>
+            <div class="body_center">
+                <div class="ctr_left">
+                    <div class="max_box">
+                        <p class="temp_letter">최고</p>
+                        <p class="temp_max"></p>
+                    </div>
+                    <div class="min_box">
+                        <p class="temp_letter">최저</p>
+                        <p class="temp_min"></p>
+                    </div>
+                    <div class="timezone"></div>
+                </div>
+                <div class="ctr_right">
+                    <div class="wind_box">
+                        <img src="img/iconfinder_icon-43-wind_315686.png" class="wind_img" alt="">
+                        <p class="wind_letter">풍속</p>
+                        <p class="wind"></p>
+                    </div>
+                    <div class="rain_box">
+                        <img src="img/iconfinder_weather_12_2682839.png" class="rain_img"  alt="">
+                        <p class="rain_letter">습도</p>
+                        <p class="rain"></p>
+                    </div>
+                    <div class="feels_like_box">
+                        <img src="img/iconfinder_square_temperature_2571371.png" class="feels_like_img"  alt="">
+                        <p class="feels_like_letter">체감온도</p>
+                        <p class="feels_like"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="img/loading.svg" alt="" class="load_img" width="50">
+        <!-- <img class="load_img" src="loading.gif" width="50"> -->
+        <h1 class="city"></h1>
+        
+
+    </div>
+    </div>
+
+    <script>
+        
+
+// 배경 그라데이션 애니메이션
+        var colors = new Array(
+        [62,35,255],
+        [60,255,60],
+        [255,35,98],
+        [45,175,230],
+        [255,0,255],
+        [255,128,0]);
+
+        var step = 0;
+        //color table indices for: 
+        // current color left
+        // next color left
+        // current color right
+        // next color right
+        var colorIndices = [0,1,2,3];
+
+        //transition speed
+        var gradientSpeed = 0.002;
+
+        function updateGradient()
+        {
+        
+        if ( $===undefined ) return;
+        
+        var c0_0 = colors[colorIndices[0]];
+        var c0_1 = colors[colorIndices[1]];
+        var c1_0 = colors[colorIndices[2]];
+        var c1_1 = colors[colorIndices[3]];
+
+        var istep = 1 - step;
+        var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+        var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+        var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+        var color1 = "rgb("+r1+","+g1+","+b1+")";
+
+        var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+        var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+        var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+        var color2 = "rgb("+r2+","+g2+","+b2+")";
+
+        $('#gradient').css({
+        background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+            background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+        
+        step += gradientSpeed;
+        if ( step >= 1 )
+        {
+            step %= 1;
+            colorIndices[0] = colorIndices[1];
+            colorIndices[2] = colorIndices[3];
+            
+            //pick two new target color indices
+            //do not pick the same as the current one
+            colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+            colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+            
+        }
+        }
+
+        setInterval(updateGradient,10);
+
+// 배경 end
+
+// API 요청
+        var url = 'https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=670bf5d30cda72bc335154412e500db7';
+
+        // var url2 ='https://api.openweathermap.org/data/2.5/onecall?lat=37.5583&lon=126.791&exclude=minutely&appid=670bf5d30cda72bc335154412e500db7'
+
+        // var url2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=670bf5d30cda72bc335154412e500db7'
+        // 로딩 이미지 표시
+   
+        
+        $('weather_info .load_img').show();
+
+        // $.getJSON(url2,function(data){
+        //     var timezone = data.timezone;
+        // })
+        $.getJSON(url,function(data){
+            var sys = data.sys;             // 국가명, 일출 일몰
+            var city = data.name;           // 도시명
+            var weather = data.weather;     // 날씨 객체
+            var main = data.main;           // 온도 기압 관련 객체
+            var wmain = weather[0].main;    // 구름 상태
+            var w_id = weather[0].id;       // 날씨상태 id 코드
+            var icon = weather[0].icon;     // 날씨 아이콘 정보
+            var country = sys.country;      // 국가명
+            var temp = main.temp;           // 현재 온도
+            var temp_min = main.temp_min;   // 최저 온도
+            var temp_max = main.temp_max;   // 최고 온도
+            var wind = data.wind.speed;     // 바람
+            var rain = data.main.humidity; //      // 습도
+            var feels_like = main.feels_like;      // 습도
+            // var hourly_pop = data.hourly.pop; //강수확률 
+
+
+
+            // 날씨 아이콘 표시
+            // var icon_url = 'http://openweathermap.org/img/wn/' + icon;
+
+            // weather icon
+            var nowTimestamp = Math.floor(Date.now() / 1000);
+            var weatherClass = 'wi wi-owm-';
+            weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
+            weatherClass += ('-' + weather[0].id);
+
+            $("#weather_info .icon").addClass(weatherClass);
+            
+            // // owfont 
+            // var nowTimestamp = Math.floor(Date.now() / 1000);
+            // var weatherClass = 'owf owf-';
+            // weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
+            // weatherClass += ('-' + weather[0].id);
+
+            // $("#weather_info .icon").addClass(weatherClass);
+
+
+            // 날씨 정보 표시
+            $('#weather_info > .city').html(city);
+            // $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
+            $('#weather_info .w_id').html(wmain);
+            $('#weather_info .temp_min').html(parseInt(temp_min-273.15) + '&deg;');
+            $('#weather_info .temp_max').html(parseInt(temp_max-273.15) + '&deg;');
+            $('#weather_info .temp').html(parseInt(temp-273.15) + '&deg;');
+            $('#weather_info .wind').html(parseInt(wind) + 'm/s');
+            $('#weather_info .rain').html(rain + 'm/s');
+            $('#weather_info .feels_like').html(parseInt(feels_like-273.15) + '&deg;');
+            // $('#weather_info .timezone').html(timezone + 'm/s');
+
+
+ 
+
+
+
+
+
+            // 데이터 로딩 후 로딩이미지 제거
+            $('#weather_info .load_img').hide();
+        })
+
+   
+
+        // // end getJSON
+        .fail(function(){
+            // 오류 메시지
+            alert("loading error");
+        });
+     
+ 
+        // 현재시간
+        var d = new Date();
+        var currentDate = d.getFullYear() + "년 " + (d.getMonth() + 1) + "월 " + d.getDate() + "일";
+        var week = new Array("일요일","월요일","화요일","수요일","목요일","금요일","토요일");
+        var currentTime = d.getHours() + "시 " + d.getMinutes() + "분 ";
+        var result = document.getElementById("time_result");
+        result.innerHTML = "오늘 날짜는 " + currentDate + " "+week[d.getDay()]+", 시간은 " + currentTime + " 입니다."; 
+        document.write(currentWeek);
+
+
+        	
+
+        
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'GyeonggiBatang';
+    color: #000;
+    border: 0;
+    overflow: hidden !important;
+}
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ul,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+legend {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999em;
+    overflow: hidden
+}
+
+label,
+input,
+button,
+select,
+img {
+    vertical-align: middle;
+    font-size: 1em
+}
+
+input,
+button {
+    margin: 0;
+    padding: 0;
+    font-size: 1em
+}
+
+input[type="submit"] {
+    cursor: pointer
+}
+
+button {
+    cursor: pointer
+}
+
+div {
+    -ms-overflow-style: none;
+}
+
+textarea,
+select {
+    font-size: 1em
+}
+
+select {
+    margin: 0
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    word-break: break-all
+}
+
+hr {
+    display: none
+}
+
+pre {
+    overflow-x: scroll;
+    font-size: 1.1em
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+#floatMenu {
+    position: fixed;
+    margin-top: 0px;
+    border: 0px solid #FF0000;
+    width: 100%;
+    z-index: 50;
+    height: 40px;
+    display: table;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: .9;
+}
+
+#floatMenu .to_menu {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    border: 0px solid #FF0000;
+}
+
+#floatMenu .to_menu ul {
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    font-size: 0.7em;
+}
+
+#floatMenu .to_menu li {
+    width: 13.3%;
+    display: table-cell;
+    vertical-align: middle;
+    border: 0px solid #FF0000;
+    height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#floatMenu .to_menu li a {
+    color: #ffffff;
+}
+
+#menu li {
+    color: #0080C0;
+}
+
+#menu li.active {
+    background-color: #5b9bd5;
+}
+
+
+
+/* (1200이상) p1 */
+#section0 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    /* background: #C0C0C0; */
+
+}
+
+
+#section1 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #D0D0E8;
+}
+
+
+#section2 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #3EC1BB;
+}
+
+
+
+
+#section3 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #B5C0D9;
+}
+
+#section4 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #B5C0D9;
+}
+#section5 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #B5C0D9;
+}
+
+#section6 {
+    border: 0px solid #3366FF;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+    background: #242424;
+    /* background: rgb(157, 177, 223); */
+}
+
+
+
+
+
+
+/* (1200이상) foot */
+#foot {
+    padding-top: 10px;
+    background: #606060;
+    border: 1px solid #606060;
+    height: 150px;
+    z-index: 10;
+}
+
+#foot .text {
+    line-height: 1.1em;
+    font-size: 13pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

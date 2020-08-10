@@ -1,0 +1,467 @@
+/* template: option-2 */
+
+.template.option-2 {
+    width: 100%;
+    height: 2224px;
+    background: url('assets/images/hcom-fpo-background.jpg') top center;
+}
+
+
+.chat {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+    height: 100%;
+    width: 0px;
+    /*
+    background-color: #f30;
+    width: 20px;
+    height: 20px;
+    */
+}
+
+.chat-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 1280;
+    /*
+    background-color: #3f0;
+    */
+}
+
+.chat-button-circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0px;
+    top: 0px;
+    background-color: #083163;
+    border: 0;
+    overflow: hidden;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -khtml-border-radius: 30px;
+    z-index: 1200;
+    /*
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    */
+}
+
+.chat-button-circle-mobile {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background-color: #083163;
+    border: 0;
+    overflow: hidden;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -khtml-border-radius: 30px;
+    z-index: 1200;
+    /*
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    */
+}
+
+.chat-button-icons {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: -3px;
+    top: 0px;
+}
+
+.chat-button-icon.one {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 58px;
+    z-index: 1210;
+}
+
+.chat-button-icon.two {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+    z-index: 1220;
+}
+
+.chat-button-line {
+    position: absolute;
+    width: 15px;
+    height: 1.5px;
+    left: 25px;
+    background-color: #fff;
+    z-index: 1230;
+}
+
+.chat-button-line.one {
+    top: 26px;
+}
+
+.chat-button-line.two {
+    top: 29px;
+}
+
+.chat-button-line.three {
+    top: 32px;
+}
+
+.chat-button-greeting {
+    position: absolute;
+    font-size: 15px;
+    line-height: 60px;
+    top: 0px;
+    left: 70px;
+    color: #fff;
+    white-space: nowrap;
+    font-family: 'ProximaNovaRegular', Helvetica, Arial, Verdana, sans-serif;
+    opacity: 0;
+}
+
+.chat-button-greeting2 {
+    position: absolute;
+    font-size: 15px;
+    line-height: 60px;
+    top: 0px;
+    left: 70px;
+    color: #fff;
+    white-space: nowrap;
+    font-family: 'ProximaNovaRegular', Helvetica, Arial, Verdana, sans-serif;
+    opacity: 0;
+}
+
+.chat-button-notification {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -1px;
+    top: 2px;
+    background-color: #07bce7;
+    overflow: hidden;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -khtml-border-radius: 8px;
+    z-index: 1210;
+	display: none !important;
+}
+
+.chat-button-notification-count {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 0px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+	display: none !important;
+}
+
+
+.chat-window {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1100;
+    /*
+    background-color: #ddd;
+    */
+}
+
+.chat-cao-embed {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cao-header {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    background-color: #083163;
+    top: 0px;
+    left: 0px;
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.07);
+}
+
+.cao-header-agent-photo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 30px;
+    top: 35px;
+    background-image: url('assets/images/agent-photo-fpo.jpg');
+    background-size: cover;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    -khtml-border-radius: 40px;
+}
+
+.cao-header-agent-name {
+    position: absolute;
+    left: 125px;
+    top: 51px;
+    font-size: 15px;
+    font-family: 'ProximaNovaSemibold', Helvetica, Arial, Verdana, sans-serif;
+    color: #fff;
+}
+
+.cao-header-agent-title {
+    position: absolute;
+    left: 125px;
+    top: 70px;
+    font-size: 10px;
+    font-family: 'ProximaNovaRegular', Helvetica, Arial, Verdana, sans-serif;
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+.cao-close-button {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 10px;
+    top: 10px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cao-close-button .line1 {
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    left: 8px;
+    top: 0px;
+    background-color: #fff;
+}
+
+.cao-close-button .line2 {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    left: 0px;
+    top: 8px;
+    background-color: #fff;
+}
+
+
+
+.cao-footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    bottom: 0px;
+}
+
+.legal-links {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 12px;
+}
+
+span.sep-line {
+    padding: 0px 5px;
+}
+
+.cao-logo {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    right: 15px;
+}
+
+.cao-logo img {
+    width: 100%;
+}
+
+
+.cao-input {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    bottom: 60px;
+    border-top: 1px solid #ccc;
+}
+
+.cao-input-label {
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+
+.chat-greeting {
+    opacity: 0;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 25px;
+}
+
+.chat-background-wrapper {
+    display: block;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 90px 20px 20px 0px;
+    z-index: 1110;
+}
+
+.chat-background {
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 280px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #fff;
+
+    overflow: hidden;
+
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -khtml-border-radius: 6px;
+
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+}
+
+
+
+.chat-carat {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -9px;
+    right: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    z-index: 1130;
+}
+
+
+.chat-button-agent-photo {
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background-image: url('assets/images/agent-photo-fpo.jpg');
+    background-size: cover;
+}
+
+
+.cao-conversation-wrapper {
+    display: block;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 140px 0px 120px 0px;
+}
+
+.cao-conversation {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.chat-statement {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.chat-statement.agent {
+    padding: 15px 30px 15px 15px;
+}
+
+.chat-statement.user {
+    padding: 15px 15px 15px 30px;
+}
+
+
+
+/*
+.chat-background {
+    -webkit-animation: bummer 0.75s;
+    animation: bummer 0.75s;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+
+@keyframes bummer {
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+*/
+
+
+

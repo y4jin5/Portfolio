@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.3.3.1min.js"></script>
+    <style>
+    *{ 
+        margin: 0;
+        padding: 0;
+    }
+    
+      .project_popup{
+        width: 100%;
+        height: 100vh;
+        background: #242424;
+        position: relative;
+      }
+      .project_box{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        top: 27%;
+        left: 35%;
+        background: white;
+        border: 10px solid rgb(76, 102, 124);
+      }
+      .project_title{
+        padding: 5% 5%;
+        border-bottom: 10px solid rgb(76, 102, 124);
+        display: flex;
+
+      }
+      .project_title>h1{
+        color: #242424;
+        font-size: 30px;
+        font-weight: 900;
+        margin-left: 2%;
+      }
+      .project_letter{
+        padding: 5% 5%;
+      }
+      .project_letter>h3{
+        line-height: 30px;
+        color: #242424;
+      }
+      .project_footer input{
+        border: none;
+        background: rgb(76, 102, 124);
+        padding: 1% 2%;
+        color: white;
+        margin-left: 85%;
+        text-align: center;
+        margin-top: 16%;
+      
+      }
+      @media (max-width :768px){
+        .project_box{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        top: 27%;
+        left: 7%;
+        background: white;
+        border: 10px solid rgb(76, 102, 124);
+      }
+    }
+
+      @media (max-width :375px){
+        .project_box{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        top: 27%;
+        left: 7%;
+        background: white;
+        border: 10px solid rgb(76, 102, 124);
+      } 
+      .project_letter>h3{
+        line-height: 30px;
+        color: #242424;
+        font-size: 16px;
+      }
+    }   
+    </style>
+    <script>
+
+function projectClose() {
+  window.open('index.html','')
+    self.close();
+}
+    </script>
+</head>
+<body>
+    <div class="project_popup">
+        <div class="project_box">
+            <div class="project_title">
+                <img src="img/logo-black.png" alt=""><h1>Team Project</h1>
+            </div>
+            <div class="project_letter">
+                <h3>Team Nmae : Goldline</h3>
+                <h3>Members : 김은영 안선주 김종인</h3>
+                <h3>Subject : 파주출판도시 PAJU BOOKCITY</h3>
+                <h3>-100% 사진촬영 기획-</h3>
+            </div>
+            <div class="project_footer">
+                <input type="button" value="닫기" class="project_btn" onclick="projectClose();">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

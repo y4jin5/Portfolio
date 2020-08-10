@@ -1,0 +1,982 @@
+
+@font-face { font-family: 'KBIZHanmaumMyungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* loading start */
+.loading {
+    display:none; 
+    position:absolute; 
+    top:-4px; 
+    left:0; 
+    z-index:99; 
+    width:100%; 
+    height:100%; 
+    background:rgba(121, 121, 121, 0.5);}
+
+.loading img {
+    display:block; 
+    position:relative; 
+    top:50%; 
+    margin:-75px auto 0 auto; 
+    /* width:200px;  */
+    /* height:50px;  */
+    padding:0 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-sizing:border-box;
+}
+/* loading end */
+
+/* logo fixed */
+.logo_box{
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 1%;
+}
+.section01{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main_img{
+    background: url('../img/sososo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 86.5vh;
+    width: 100%;
+    padding-top: 40px;
+}
+.main_txt_bg{
+    background: #ccc;
+    opacity: 0.6;
+    width: 100%;
+    height: 30vh;
+}
+.main_img_title{
+    margin-top: 1%;
+    height: 40%;
+    padding-bottom: 70px;
+    background-color: rgba(34, 32, 32, 0.301);
+}
+.main_letter1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 900;
+    padding-top: 2%;
+    letter-spacing: 20px;
+}
+.main_letter2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 800;
+}
+
+.main_letter3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+}
+.main_letter3_none{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+
+}
+.main_icon_txt1>.row{
+    padding: 0.5% 0;
+}
+.main_icon_txt2>.row{
+    padding: 5% 0!important;
+}
+.main_icon_txt3>.row{
+    padding: 5% 0;
+}
+.main_icon_txt4>.row{
+    padding: 5% 0;
+}
+
+.main_icon{
+    height: 100vh;
+    background: rgb(228, 228, 228);
+    padding: 0.6% 0;
+}
+.row>.col-sm-12{
+    /* color: #fff; */
+}
+.modal_txt h3{
+    color: white;
+}
+.main_icon_txt1{
+    border-right: solid rgb(167, 167, 167) 1px;
+    
+}
+.main_icon_txt2{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+.main_icon_txt3{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+.main_icon_footer{
+    padding-top: 3%;
+}
+.main_icon .col-sm-3 .col-sm-12{
+    color: #757575;
+}
+
+.logo_box img{
+    width: 200px;
+    margin-top: -2%;
+    margin-left: 0.5%;
+}
+
+
+/* section01 end */
+
+
+/* section02 start */
+
+.section02{
+    background: #f5f2f1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.sec02_txt{
+    padding-top: 3%;
+}
+.tab-car-img img{
+}
+
+
+.tab-car-color-text>ul>li{
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 2% 4%;
+}
+.tab-car-color-text>ul{
+    display: flex;
+    padding: 0 10%;
+    width: 100%;
+    justify-content: center;
+
+    
+
+}
+.r2t,.e2r,.q2w,.j2f,.a2s,.y2b{
+    display: none;
+}
+.tab-car-img img{
+}
+.tab-car-color-text a{
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+#wc9{
+    background: url('../img/01.png');
+
+}
+#r2t{
+    background: url('../img/02.png');
+}
+
+#e2r{
+    background: url('../img/03.png');
+}
+#q2w{
+    background: url('../img/04.png');
+}
+#j2f{
+    background: url('../img/05.png');
+}
+#a2s{
+    background:url('../img/06.png');
+}
+#y2b{
+    background: url('../img/07.png');
+}
+
+
+.wc9{
+    color: #cbcacd;
+}
+.r2t{
+    color: #7d7f85;
+}
+
+.e2r{
+    color: #7d7f85;
+}
+.q2w{
+    color: #2e343b;
+}
+.j2f{
+    color: #162640;
+}
+.a2s{
+    color: #121416;
+}
+.y2b{
+    color: #4a060b;
+}
+
+.color-txt{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-left: -4.3%;
+    padding-left: 0;
+}
+.color-txt>li>p{
+    font-family: 'KBIZHanmaumMyungjo';
+
+}
+.color-txt>ul>li{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+.color-main-txt{
+    margin-top: 3%;
+}
+.color-main-txt>h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #333333;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.color-main-txt>h4{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 30px;
+    color: rgb(102, 102, 102);
+
+}
+.color-add-txt{
+    /* padding-left: 6%; */
+    padding-top: 0;
+    color: rgb(179, 179, 179);
+}
+
+/* section02 end */
+
+/* section03 start */
+.section03{
+    font-family: 'KBIZHanmaumMyungjo';
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sec03_row1{
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-top: 2%;
+}
+.section03 h1{
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-top: 0%;
+}
+.section03 p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'KBIZHanmaumMyungjo';
+    color: rgb(151, 151, 151);
+}
+.imgimg{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-style:none;
+    box-sizing: border-box;
+}
+
+.sec03_nav_box{
+    margin:5% 20%;
+}
+
+.exterior_btn a{
+    font-weight: 900;
+    font-family: 'KBIZHanmaumMyungjo';
+    background: #337ab7;
+    color: white;
+}
+.nav-tabs{
+}
+.active .exterior_btn a{
+    color: white ;
+}
+
+.interior_btn a{
+    font-weight: 900;
+    font-family: 'KBIZHanmaumMyungjo';
+    
+}
+.tab-content{
+    margin-top: 2%;
+}
+.modal{
+    width: 100%;
+}
+.modal_img img{
+    width: 100%;
+}
+.modal_box{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 35%;
+}
+.modal_txt{
+    width: 100%;
+    /* border: 10px solid #242424; */
+    background: #242424;
+    padding: 1% 10%;
+}
+.modal_txt h3{
+    font-size: 23px;
+    margin-top: 10px;
+}
+.modal_txt p{
+    font-size: 16px;
+}
+
+
+
+/* modal tab modified*/
+.nav{
+    width: 100%;
+}
+.nav>li{
+    width: 50%;
+}
+.nav>li>a {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-size: 25px;
+}
+
+/* modal tab end */
+
+
+.point .bg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 107, 0.12);
+    -webkit-border-radious: 50%;
+    border-radius: 50%;
+    animation: record-lg 1.5s ease-in-out infinite;
+}
+.point .dot{
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #007fa8;
+    border: 1px solid #99cada;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 50%;
+    animation: dot-effec 1.5s ease-in-out infinite;
+
+}
+@keyframes dot-effec {
+
+
+    0% {
+        opacity:  0;
+        transform: scale(.5);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    }
+    
+    @keyframes record-lg {
+    
+    
+        0% {
+            opacity:  .5;
+            transform: scale(.5);
+        }
+        50%{
+            opacity: 1;
+            transform: scale(1);
+        }
+        100%{
+            opacity: .5;
+            transform: scale(1);
+        }
+        }
+    
+    .point.point-1{
+        top: 35.3%;
+        left: 63.5%;
+    }
+    
+    .point.point-2{
+        top: 58.5%;
+        left: 49.3%;
+    }
+    
+    .point.point-3{
+        top: 53.3%;
+        left: 62%;
+    }
+    
+    .point.point-4{
+        top: 41%;
+        left: 75.1%;
+    }
+    .point.point-5{
+        top: 36%;
+        left: 38%;
+    }
+    .point.point-6{
+        top: 48%;
+        left: 35.7%;
+    }
+    .point.point-7{
+        top: 70%;
+        left: 46.3%;
+    }
+    .point.point-8{
+        top: 49.2%;
+        left: 61.1%;
+    }
+
+    
+    .point{
+        cursor: pointer;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+    }
+    
+   
+    .introduction{
+        padding-top: 100px;
+    }
+
+
+ 
+
+
+
+
+/* section 03 end */
+/* section 04 start*/
+
+.section04{
+    width: 100%;
+    height: 100vh;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec04_main_txt{
+    padding-top: 1%;
+}
+.sec04_main_txt h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+
+}
+.sec04_main_txt>p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'KBIZHanmaumMyungjo';
+    color: rgb(151, 151, 151);
+    padding-bottom: 1%;
+
+}
+.sec04_img{
+    position: relative;
+    width: 59.8%;
+}
+.sec04_slide1 img{
+    padding-bottom: 0.9%;
+}
+
+.point.point-9{
+    top: 74.1%;
+    left: 34.45%;
+}
+.point.point-10{
+    top: 83.2%;
+    left: 35.8%;
+}
+.point.point-11{
+    top: 32.5%;
+    left: 66.7%;
+}
+.point.point-12{
+    top: 38%;
+    left: 76%;
+}
+
+.owl-theme img{
+    cursor: pointer;
+}
+
+
+
+/* section 04 end */
+/* section 05 start */
+
+.section05{
+    width: 100%;
+    height: 100vh;
+    font-family: 'KBIZHanmaumMyungjo';
+    position: relative;
+    z-index: 1;
+}
+/* .section05::after{
+    opacity: 50%;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: url('../img/sonata19201080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    z-index: -1;
+} */
+.slide_box{
+    
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.slide_box::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+}
+
+
+.slide_box ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding-inline-start: 0;
+
+}
+.slide_box ul li{
+}
+.slide_box img{
+
+}
+.sec05_main_txt{
+    padding-top: 3%;
+}
+.sec05_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding-top: 3%;
+    color: white;
+}
+.sec05_main_txt p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(194, 194, 194);
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-bottom: 3%;
+}
+.sp-thumbnail-title{
+    text-align: center;
+}
+#example1{
+}
+
+
+
+/* section 05 end */
+/* section 06 start */
+.section06{
+    width: 100%;
+    height: 100vh;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec06_main_txt{
+    padding-top: 2%;
+}
+.sec06_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding-top: 3%;
+}
+.sec06_main_txt p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'KBIZHanmaumMyungjo';
+    color: rgb(151, 151, 151);
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-bottom: 3%;
+}
+.section06 .container-fluid #example5{
+    /* font-family: 'KBIZHanmaumMyungjo'; */
+}
+
+.sec06_owl{
+    margin-top: 2%;
+    width: 50%;
+}
+#example5{
+    height: 560px;
+    margin-top: -1.5%;
+}
+.section06 .slider-pro{
+    /* font-family: 'KBIZHanmaumMyungjo'; */
+    
+}
+.slider-pro .sp-vertical{
+    width: 1920px;
+}
+.section06 .slider-pro .sp-caption-container{
+    /* background: rgba(50, 112, 133, 0.685); */
+    background: rgb(75, 112, 154);
+    font-family: 'KBIZHanmaumMyungjo';
+    color: white;
+    font-size: 18px;
+    padding: 2%;
+    z-index: 99999999999999999999;
+
+
+}
+
+
+/* section06 end */
+/* section07 start */
+
+
+.section07{
+    width: 100%;
+    height: 100vh;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec07_main_txt{
+    padding-top: 1;
+}
+.sec07_main_txt h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding-top: 3%;
+}
+.sec07_main_txt>p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-bottom: 3%;
+}
+/* .p2{
+    margin-bottom: -5%!important;
+} */
+.sec07_box{
+    margin-top: -2%;
+}
+
+.ba-slider {
+    width: 63.5%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+}
+.resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+/* .resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.resize img{
+    display: block;
+    width: 10%;
+} */
+
+
+.handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+ 
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
+ 
+.handle:after {  /* Big orange knob  */
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+ 
+    content:'\21d4';
+    color:white;
+    font-weight:bold;
+    font-size:36px;
+    text-align:center;
+    line-height:64px;
+ 
+    background: #ffb800; /* @orange */
+    border:1px solid #e6a600; /* darken(@orange, 5%) */
+    border-radius: 50%;
+    transition:all 0.3s ease;
+    box-shadow:
+      0 2px 6px rgba(0,0,0,.3), 
+      inset 0 2px 0 rgba(255,255,255,.5),
+      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
+}
+
+.draggable:after {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:48px;
+    font-size:30px;
+}
+
+
+
+.p2{
+    font-size: 18px!important;
+    font-weight: 200!important;
+    color: rgb(151, 151, 151)!important;
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-top: -2.5%;
+    margin-bottom: 3%;
+}
+.bottom_txt{
+    margin-top: 3%;
+    width: 62%;
+    margin: 0 auto;
+    font-family: 'open sans';
+}
+.bottom_txt h3{
+    
+}
+
+
+/* section07 end */
+/* section08 start */
+
+.section08{
+    width: 100%;
+    height: 100vh;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec08_main_txt{
+    padding-top: 3%;
+}
+.sec08_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding-top: 3%;
+}
+.sec_08_vd{
+    padding-top: 2%;
+}
+.section08 .sp-mask{
+    margin-bottom: -16%!important;
+}
+
+
+.section08 .sp-slide{
+}
+
+
+
+/* section08 end */
+/* section09 start */
+
+.section09{
+    width: 100%;
+    height: 100vh;
+    /* background: url('../img/Large-38636-2020HyundaiSonata.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec09_main_txt{
+    /* padding-top: 3%; */
+    padding-top: 60px;
+}
+.sec09_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding-top: 3%;
+    color: black;
+    margin-bottom: 3%;
+}
+.sec09_con{
+    width: 100%;
+    padding: 0;
+}
+.sec9_box{
+    /* background: rgba(61, 61, 61, 0.603); */
+    /* background: rgba(255, 255, 255, 0.603); */
+    width: 40%;
+    margin: 0 5%;
+    height: 300px;
+    padding: 3.5%;
+}
+.sec9_box h3{
+    color: rgb(43, 43, 43);
+}
+
+.sec09_con>.row{
+    /* margin: 3% auto !important; */
+
+}
+.sec9_box img{
+    margin: 0;
+    padding: 0;
+}
+.h3_color{
+    color: #4B709A !important;
+    font-weight: 900;
+}
+.xs_right{
+    color: #333;
+    font-weight: bold;
+}
+
+.sec09_footer{
+    background: rgb(56, 56, 56);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 12.6%;
+    height: 300px;
+}
+.footer_logo{
+    top: 20%;
+    left: 5%;
+}
+
+.sec09_footer ul{
+    display: flex;
+}
+.sec09_footer ul li{
+    border-right: 1px solid #ccc;
+    padding: 0 2%;
+}
+.sec09_footer ul li:nth-last-child(1){
+    border-right: none;
+}
+.sec09_footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer_2{
+    padding-top: 6%;
+}
+.footer_select{
+    border: none;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+.footer_4, .footer_5{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
