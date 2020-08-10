@@ -1,4 +1,13 @@
+//loading start
 
+    $(document).ready(function() {
+      $('.loading').show();
+    });
+    $(window).on('load', function() {
+      $('.loading').hide();
+    });
+
+//loading end
 // scroll logo menu
 $(window).scroll(function () {
     if($(window).scrollTop() < 150) {

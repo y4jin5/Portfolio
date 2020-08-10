@@ -13,6 +13,34 @@
 
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
 
+
+
+/* loading start */
+.loading {
+    display:none; 
+    position:absolute; 
+    top:-4px; 
+    left:0; 
+    z-index:99; 
+    width:100%; 
+    height:100%; 
+    background:rgba(121, 121, 121, 0.5);}
+
+.loading img {
+    display:block; 
+    position:relative; 
+    top:50%; 
+    margin:-75px auto 0 auto; 
+    /* width:200px;  */
+    /* height:50px;  */
+    padding:0 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-sizing:border-box;
+}
+/* loading end */
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
