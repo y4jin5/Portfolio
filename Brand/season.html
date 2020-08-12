@@ -27,85 +27,7 @@
 
 
   <style>
-    body {
-  margin: 0;
-}
-
-/* h1 {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0;
-  font-size: 50px;
-  font-weight: 100;
-  text-align: center;
-  color: white;
-} */
-h1{
-    position: absolute;
-    margin: 0;
-    top: calc(30% - 50px);
-    width: 100%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    height: 100px;
-    color: white;
-    font-size: 5rem;
-    background: rgba(0,0,0,0.4);
-    z-index: 999;
-    margin-top: -5%;
-}
-
-p {
-  margin: 0 60px;
-  font-weight: 300;
-}
-
-.season_overay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: black;
-}
-
-section {
-  width: 100%;
-  padding: 60px 0;
-  background: white;
-}
-
-
-.season_page {
-  padding: 0;
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-
-}
-
-.season_page:first-child {
-  height: 300px;
-  min-height: inherit;
-  background-attachment: inherit;
-  background-position: center;
-  background-size: cover;
-}
-.season_letter{
-    z-index: 1;
-  position: relative;
-  /* background: #282E34; */
-  /* color: white; */
-  font-size: 1rem;
-  line-height: 2em;
-  padding: 3rem;
-  margin: 0;
-  display: flex;
-}
-    /* tab menu start */
+/* tab menu start */
 
 .tab-wrapper {
   margin: 60px auto;
@@ -226,265 +148,120 @@ section {
 <!-- tab menu start -->
 
 
-  <div class="tab-wrapper">
+<div class="tab-wrapper">
   
-    <ul class="tab-menu">
-      <li class="active"><a href="#">SPRING</a></li>
-      <li><a href="#">SUMMER</a></li>
-      <li><a href="#">FALL</a></li>
-      <li><a href="#">WINTER</a></li>
-    </ul>
-    
-    <div class="tab-content">
-        <div>
-            <!-- spring start-->
-
-<section class="season_page" style="background-image: url('img/eugene-zhyvchik-YdE0i14Oy8M-unsplash.jpg');">
-    <div class="season_overay">
-      <h1>Spring</h1>
-    </div>
-</section>
-<section class="season_letter">
-    <p>봄</p>
-</section>
-
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/richard-barnard-MUZYsXRYhyA-unsplash.jpg'); background-size: cover;">
-    <!-- <div class="letter">
-      토마토
-    </div> -->
-  </section>
-  <section>
-    <p>슈퍼. </p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/gianluca-gerardi-BnRTS550Lzc-unsplash.jpg');">
-    <!-- <div class="letter">
-      딸기
-    </div> -->
-  </section>
-  <section>
-    <p>딸기는 대</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/ki-woong-qldt2ZnxLJE-unsplash.jpg');">
-    <!-- <div class="letter">
-      골드키위
-    </div> -->
-  </section>
-  <section>
-    <p>뉴</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/tim-mossholder-S3gNA0HQZo8-unsplash (1).jpg'); background-size: cover;">
-    <!-- <div class="letter">
-      매실
-    </div> -->
-  </section>
-  <section>
-    <p>"봄
-    </p>
-  </section>
-  
+  <ul class="tab-menu">
+    <li class="active">Spring</li>
+    <li>Summer</li>
+    <li>Fall</li>
+    <li>Winter</li>
+  </ul>
   
 
+  <!-- Tab content start -->
+  <div class="tab-content">
 
-<!-- spring end -->
+    <!-- Spring start -->
+    <div>
+      <!-- ======= Service Details Section ======= -->
+      <section class="service-details" style="width: 100%;">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/richard-barnard-MUZYsXRYhyA-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="season.html">토마토</a></h5>
+                  <p class="card-text text-center">타임지에서 선정한 세계 10대 슈퍼푸드<br>
+                    항산화효과가 탁월한 과일 중의 하나<br>
+                    다양한 비타민과 무기질, 항산화물질이 풍부<br>
+                    노화를 방지하고 항암효과가 탁월</p>
+                  <!-- <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/ben-ashby-SVnqjkmUDLo-unsplash.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="season.html">딸기</a></h5>
+                  <p class="card-text text-center"><br>새콤달콤한 맛으로 사랑받고 있는 딸기<br>
+                    하루에 8개 먹으면 질병·노화 걱정 끝!<br>
+                    비타민C가 풍부하게 들어 있어  스트레스 완화, 피로 해소, 감기 치료, 피부 미백 등 다양한 작용<br>
+                    '안토시아닌'도 항산화 작용을 하는 중요 성분으로 딸기에 많이 들어 있다.</p>
+                  <!-- <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/product-masthead-new.jpg" style="max-width:107.5%" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="season.html">골드키위</a></h5>
+                  <p class="card-text text-center">감<br>
+                    무화과<br>
+                    사과<br>
+                    배</p>
+                  <!-- <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/bruna-branco-7r1HxvVC7AY-unsplash.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="season.html">매실</a></h5>
+                  <p class="card-text text-center">귤<br>
+                    석류<br>
+                    유자<br>
+                    체리</p>
+                  <!-- <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+          </div> 
+
         </div>
-        <div>
-<!-- summer start-->
+      </section>
+      <!-- End Service Details Section -->
+    </div>
+    <!-- Spring End -->
 
-<section class="season_page" style="background-image: url('img/element5-digital-acrBf9BlfvE-unsplash.jpg');">
-    <div class="season_overay">
-      <h1>Summer</h1>
+    <!-- Summer start -->
+    <div>
+
     </div>
-  </section>
-  <section class="season_letter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
-      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
-      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/pu-far-jXtV7qxtxfY-unsplash.jpg');">
-    <div class="letter">
-      복숭아
+    <!-- Summer start -->
+
+
+    <!-- Fall start -->
+    <div>
+
     </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
-      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
-      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
-      cupiditate aspernatur.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/brooke-lark-3A1etBW5cBk-unsplash.jpg');">
-    <div class="letter">
-      파인애플
+    <!-- Fall start -->
+
+
+    <!-- Winter start -->
+    <div>
+
     </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
-      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
-      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
-      non, ea suscipit.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/amy-shamblen-euqiHwS38Rw-unsplash.jpg');">
-    <div class="letter">
-      수박
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
-      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
-      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/eiliv-sonas-aceron-k9X5yGle-NA-unsplash.jpg');">
-    <div class="letter">
-      바나나
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
-      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
-      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
-      expedita dicta fuga!</p>
-  </section>
+    <!-- Winter start -->
+
+
+  </div>
+  <!-- //tab-content -->
   
-<!-- summer end -->
-        </div>
-        <div>
-<!-- fall start-->
-
-<section class="season_page" style="background-image: url('img/jodie-morgan-t5KTjPSfdxg-unsplash.jpg');">
-    <div class="season_overay">
-      <h1>Fall</h1>
-    </div>
-  </section>
-  <section class="season_letter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
-      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
-      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/estudio-bloom-Al0geA4zDqw-unsplash.jpg');">
-    <div class="letter">
-      감
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
-      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
-      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
-      cupiditate aspernatur.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/tim-chow-9cVdAJnwSac-unsplash.jpg');">
-    <div class="letter">
-      무화과
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
-      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
-      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
-      non, ea suscipit.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/close-up-photography-of-apples-672101.jpg');">
-    <div class="letter">
-      사과
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
-      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
-      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/khloe-arledge-gHIABZ6roh0-unsplash.jpg');">
-    <div class="letter">
-      배
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
-      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
-      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
-      expedita dicta fuga!</p>
-  </section>
-  
-
-
-
-
-
-
-  
-
-
-<!-- fall end -->
-        </div>
-        <div>
-<!-- winter start-->
-
-<section class="season_page" style="background-image: url('img/stefan-cosma-IDZWGBMUklo-unsplash.jpg');">
-    <div class="season_overay">
-      <h1>Winter</h1>
-    </div>
-  </section>
-  <section class="season_letter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati beatae perferendis deserunt dolores molestiae hic dolorum maxime numquam, ad rerum quas optio quis ut, ducimus eaque sint maiores repellat qui, explicabo. Quis incidunt quo adipisci
-      veniam explicabo nihil maiores doloremque id voluptates corporis animi vel tenetur quidem deserunt, nemo amet. Laborum maxime corporis, quo quis asperiores ipsum dolorum voluptatum unde adipisci, ut necessitatibus praesentium aliquam dolores placeat
-      delectus cupiditate dolorem nobis magni commodi vero tenetur, sapiente fuga earum! Porro adipisci labore explicabo quia nostrum neque laborum maxime soluta ad quaerat quos cum fugiat, at odit. Deleniti id illum quis ex.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/aliona-gumeniuk-YJ7dFJTHEjI-unsplash.jpg');">
-    <div class="letter">
-      귤
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere error ipsam voluptatibus qui nisi laboriosam culpa, voluptas molestiae accusantium veritatis illum, cum repellat est illo maiores dolore odio aliquid maxime facilis atque natus praesentium
-      repudiandae! Voluptates reiciendis dolores repellendus dicta autem doloremque quam unde aliquam recusandae est. Cupiditate totam aperiam vero hic atque accusantium consequuntur fugiat sapiente est, laboriosam, reiciendis minus vitae itaque voluptate
-      vel velit corporis facere veritatis distinctio nulla. Inventore voluptates, quae totam unde illo. Magnam voluptas voluptate omnis soluta similique temporibus dolore aliquam nostrum earum cum, quibusdam, ad incidunt delectus ex suscipit quia qui reprehenderit
-      cupiditate aspernatur.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/chaman-raj-NxwWip3Q4OQ-unsplash.jpg');">
-    <div class="letter">
-      석류
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque beatae odio minus quo perspiciatis debitis, sapiente ipsam suscipit. Cumque aut vel saepe doloribus minus pariatur numquam, deserunt, accusantium architecto fuga, magni nulla labore rem
-      totam. Vel nihil tempore pariatur, qui! Molestiae, deserunt illum possimus esse, ipsa corporis adipisci tenetur commodi quisquam! Iure accusantium voluptatibus sint aliquam, laudantium qui, atque earum quibusdam perspiciatis officia quis ipsa labore
-      maiores repellat quaerat possimus sed porro mollitia recusandae fugiat repellendus illo dicta dignissimos? Illo ratione, odio repudiandae. Asperiores, explicabo! Aliquid sunt alias dignissimos, nulla explicabo. Ipsam quo ad laudantium voluptates tenetur
-      non, ea suscipit.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/yellow-lemon-food-produce-fruit-citric-acid-1545675-pxhere.com.jpg');">
-    <div class="letter">
-      유자
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas alias error adipisci at ipsum, voluptate totam a! Expedita ipsum est assumenda, nam porro provident maiores facilis? Facere atque, possimus dicta vel veritatis, repellat enim similique
-      eius nulla id nisi corporis suscipit? Corrupti animi neque architecto reprehenderit sint illo, qui beatae! Ipsam laudantium sed enim commodi, quos explicabo in totam nisi? Omnis repellat ullam facilis earum sint sed laudantium voluptatum, est optio
-      quas quae, at eum esse. Obcaecati rem exercitationem rerum velit fugit voluptatem esse voluptatibus, mollitia laborum similique recusandae ab aut quidem distinctio dolores deleniti dolorem placeat quia nesciunt facilis.</p>
-  </section>
-  <section class="season_page" data-type="background" data-speed="10" style="background-image: url('img/monika-grabkowska-WJohV6oUoIc-unsplash.jpg');">
-    <div class="letter">
-      체리
-    </div>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet totam in incidunt fugit recusandae distinctio et ad fugiat labore officiis sequi impedit possimus, ipsam officia perferendis repellendus libero. Numquam officiis veniam autem est? Maiores
-      qui mollitia id nulla, rerum culpa porro magnam iusto molestiae officia, asperiores impedit dolore repellat perspiciatis aspernatur dolores, distinctio odio. Voluptates debitis dolorem provident mollitia ab sint voluptatem quod quibusdam necessitatibus
-      possimus distinctio nisi ipsum tempora molestiae ullam cumque temporibus totam, a voluptatibus ex! Repellat eos consectetur veniam, id corporis accusantium, optio nisi laboriosam saepe recusandae veritatis, quibusdam, distinctio harum atque quaerat
-      expedita dicta fuga!</p>
-  </section>
-  
-
-
-
-
-
-
-  
-
-
-<!-- winter end -->
-        </div>
-    </div><!-- //tab-content -->
-    
-</div><!-- //tab-wrapper -->
+</div>
+<!-- //tab-wrapper -->
 
 <!-- tab menu end -->
 

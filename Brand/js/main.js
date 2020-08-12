@@ -12,7 +12,11 @@
     //   $(window).load(function() {
     //     $('.loading').hide();
     //   });
-
+    // window.onload  = function() {
+    //     // 페이지 완전 로딩후 실행
+    //     alert("로딩 완료");
+    //     // 이후 프로세스 실행
+    //     }
 //loading end
 // scroll logo menu
 $(window).scroll(function () {
