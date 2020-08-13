@@ -1,0 +1,6 @@
+                        <?php
+                        echo "<a href=\"".$list[$i]['href']."\" class=\"bn_view\">자세히보기<span class=\"arrow\"></span></a>";
+                        ?>
+
+
+배너 자세히 보기 부분
