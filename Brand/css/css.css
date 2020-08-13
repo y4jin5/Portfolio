@@ -2328,8 +2328,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #ecb369;
-  padding: 0 0 30px 0;
+  /* background: #ecb369; */
+  /* padding: 0 0 30px 0; */
   color: #fff;
   font-size: 14px;
 }
@@ -2345,7 +2345,8 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #e69941;
+  /* color: #e69941; */
+  color: white;
 }
 
 #footer .footer-newsletter form {
@@ -2413,7 +2414,8 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  color: #e69941;
+  /* color: #e69941; */
+  color: white;
   font-weight: 600;
 }
 
@@ -2449,7 +2451,8 @@ section {
 #footer .footer-top h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #e69941;
+  /* color: #e69941; */
+  color: white;
   position: relative;
   padding-bottom: 12px;
 }

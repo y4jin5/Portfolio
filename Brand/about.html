@@ -26,6 +26,158 @@
   <link href="css/css.css" rel="stylesheet">
 
   <style>
+
+    
+/* Container styles */
+body {
+  /* background-color: #2F2F2F; */
+  color: #333;
+  font-family: 'Lato';
+}
+
+.container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+    width: 400px;
+  height: 400px;
+  
+}
+
+
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+
+
+ svg .inner {
+  stroke: #256F8D;
+  fill: none;
+    stroke-width: 10;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  z-index: 2;
+
+}
+
+#circle:after {
+  content: 'Brasil';
+  position: absolute;
+   
+  opacity: 0;
+
+    border-right: 3px solid #F08418;
+    bottom: 25px;
+    left: -40px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+    border-bottom: 3px solid #F08418;
+
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;  
+
+}
+
+
+
+
+
+.chart figcaption {
+  width: calc(80% - 10px);
+  height: calc(80% - 10px);
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  left: calc( 50% - (80%/2) - -7px );
+  top: calc( 50% - (80%/2) - 13px);
+  -webkit-animation: see 1s;
+  animation: see 1s;
+}
+.chart figcaption h2{
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 80px;
+  color:rgb(54, 54, 54);
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.outer {
+  fill: transparent;
+  stroke: #F08418;
+  stroke-width: 25;
+  stroke-dasharray: 251%;
+  -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+
+
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+
+.chart[data-percent='75'] .outer {
+   stroke-dashoffset: -100%;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+
+
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: -251%;
+  }
+  
+  to {
+    stroke-dashoffset: -100%;
+  }
+}
+@keyframes see {
+  from {
+      opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* END Keyframes for the initial animation */
     @media(max-width: 1200px){
       .logo_face{
         display: flex;
@@ -162,8 +314,25 @@
         </div>
 
         <div class="skills-content">
+          <section class="container">
 
-          <div class="progress">
+            <!-- START - CIRCLE GRAPH -->
+            <div>
+              <figure class="chart" id="circle"data-percent="75">
+                <svg>
+                  <circle  class="inner"cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
+                  <circle class="outer" cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
+                </svg>
+      
+                <figcaption>
+                  <h2>34%</h2>
+                  <p>Refugiados<br> nas <br>Américas</p>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- END - CIRCLE GRAPH -->
+          </section>
+          <!-- <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
               <span class="skill">Fresh <i class="val">100%</i></span>
             </div>
@@ -186,7 +355,7 @@
             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
               <span class="skill">Price <i class="val">65%</i></span>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -328,10 +497,10 @@
                 <h3>Web Design Project</h3>
                 <p>Kim Eun Young</p>
                 <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                   <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                 </div>
               </div>
     
@@ -339,19 +508,16 @@
           </div>
         </div>
     
-        <div class="container">
+        <!-- <div class="container">
           <div class="copyright">
             &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
-        </div>
-      </footer><!-- End Footer -->
+        </div> -->
+      </footer>
+      <!-- End Footer -->
     
       <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
 

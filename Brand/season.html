@@ -32,27 +32,39 @@
 .tab-wrapper {
   margin: 60px auto;
   width: 100%;
+  display: flex;
   /* max-width:519px; */
 }
+/* .tab-menu-blank{
+    width: 100%;
+} */
 .tab-menu{
-    position: absolute;
-    left: 0;
     margin: 2%;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 9999999;
+    margin-right: 10%;
+
+
 
 }
 .tab-menu li {
-  position:relative;
-  /* background-color: #fff; */
+  /* position:relative;
   color:#bcbcbc;
   display: inline-block;
   padding: 20px 40px;
   opacity: 0.8;
   cursor:pointer;
-  z-index:0;
+  z-index:0; */
+  position:relative;
+  display: block;
+  color:#bcbcbc;
+  background-color: inherit;
+  padding: 20px 40px;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .tab-menu li:hover {
@@ -156,6 +168,9 @@
     <li>Fall</li>
     <li>Winter</li>
   </ul>
+  <ul class="tab-menu-blank">
+
+  </ul>
   
 
   <!-- Tab content start -->
@@ -201,7 +216,7 @@
             <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
               <div class="card">
                 <div class="card-img">
-                  <img src="img/product-masthead-new.jpg" style="max-width:107.5%" alt="...">
+                  <img src="img/img.png" style="max-width:107.5%" alt="...">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"><a href="season.html">골드키위</a></h5>
@@ -327,10 +342,10 @@
                 <h3>Web Design Project</h3>
                 <p>Kim Eun Young</p>
                 <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                   <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                 </div>
               </div>
     
@@ -338,18 +353,14 @@
           </div>
         </div>
     
-        <div class="container">
+        <!-- <div class="container">
           <div class="copyright">
             &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
-        </div>
+        </div> -->
       </footer><!-- End Footer -->
     
       <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
