@@ -1,0 +1,55 @@
+/* https://codepen.io/ihzh/pen/eJORLE */
+
+@charset "utf-8";
+:root{
+	--tab-background: #e74c3c;	
+};
+
+.tabs{
+
+}
+
+.tabs input {
+	display: none;
+}
+
+.tabs label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 5px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+	border: 1px solid gray;
+	border-bottom: 2px solid var(--tab-background);
+	border-radius:10px 10px 0 0;
+}
+
+.tabs input:checked + label {
+	color: #fff;
+	border: 3px solid var(--tab-background);
+	background: var(--tab-background);	
+}
+
+.tabs .tab{	
+	width: 100%;
+	border-top: 3px solid var(--tab-background);
+	padding: 5px;
+}
+
+span.new_ti {    
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	margin: 5px 0;
+	font-size: 1.2em;
+}
+
+span.new_dt {    
+    /*text-align: right;*/
+    width: 35px;
+    float: right;
+    line-height: 23px;
+}

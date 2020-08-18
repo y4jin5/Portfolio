@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {margin:10px 0;padding:20px;background:#fff}
+.ctt_admin {text-align:right}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {padding:10px 0;line-height:1.6em}
+#ctt_con img{max-width:100%;height:auto}
+.ctt_img {text-align:center}
+
+/* https://codepen.io/brady_wright/pen/NNOvrW */
+
+/*-- GENERAL STYLES ------------------------------*/
+.timeline {
+	line-height: 1.4em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+}
+ .timeline .timeline-item {
+	 padding-left: 40px;
+	 position: relative;
+}
+ .timeline .timeline-item:last-child {
+	 padding-bottom: 0;
+}
+ .timeline .timeline-info {
+	 font-size: 20pt;
+	 font-weight: 700;
+	 letter-spacing: 3px;
+	 margin-bottom: 20px;
+	 text-transform: uppercase;
+	 white-space: nowrap;
+}
+ .timeline .timeline-marker {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 width: 15px;
+}
+ .timeline .timeline-marker:before {
+	 background: #ff6b6b;
+	 border: 3px solid transparent;
+	 border-radius: 100%;
+	 content: "";
+	 display: block;
+	 height: 25px;
+	 position: absolute;
+	 top: 2px;
+	 left: 0px;
+	 width: 25px;
+	 transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+ .timeline .timeline-marker:after {
+	 content: "";
+	 width: 3px;
+	 background: #ccd5db;
+	 display: block;
+	 position: absolute;
+	 top: 30px;
+	 bottom: 0;
+	 left: 10px;
+}
+ .timeline .timeline-item:last-child .timeline-marker:after {
+	 content: none;
+}
+ .timeline .timeline-item:not(.period):hover .timeline-marker:before {
+	 background: transparent;
+	 border: 3px solid #ff6b6b;
+}
+ .timeline .timeline-content {
+	 padding-bottom: 40px;
+}
+ .timeline .timeline-content p:last-child {
+	 margin-bottom: 0;
+} 
+ .timeline .timeline-title {
+	 margin-bottom: 30px;	 
+	 font-size: 13pt;
+	  /*border: 1px solid pink;*/
+}
+ .timeline .timeline-title span{
+	 font-weight: bold;
+	 margin-right: 10px;
+}
+ @media (min-width: 768px) {
+	 .timeline .timeline-split .timeline, .timeline .timeline-centered .timeline {
+		 display: table;
+	}
+	 .timeline .timeline-split .timeline-item, .timeline .timeline-centered .timeline-item {
+		 display: table-row;
+		 padding: 0;
+	}
+	 .timeline .timeline-split .timeline-info, .timeline .timeline-centered .timeline-info, .timeline .timeline-split .timeline-marker, .timeline .timeline-centered .timeline-marker, .timeline .timeline-split .timeline-content, .timeline .timeline-centered .timeline-content, .timeline .timeline-split .period .timeline-info, .timeline .timeline-centered .period .timeline-info {
+		 display: table-cell;
+		 vertical-align: top;
+	}
+	 .timeline .timeline-split .timeline-marker, .timeline .timeline-centered .timeline-marker {
+		 position: relative;
+	}
+	 .timeline .timeline-split .timeline-content, .timeline .timeline-centered .timeline-content {
+		 padding-left: 30px;
+	}
+	 .timeline .timeline-split .timeline-info, .timeline .timeline-centered .timeline-info {
+		 padding-right: 30px;
+	}
+
+}
+ @media (min-width: 992px) {
+	 .timeline .timeline-centered, .timeline .timeline-centered .timeline-item, .timeline .timeline-centered .timeline-info, .timeline .timeline-centered .timeline-marker, .timeline .timeline-centered .timeline-content {
+		 display: block;
+		 margin: 0;
+		 padding: 0;
+	}
+	 .timeline .timeline-centered .timeline-item {
+		 padding-bottom: 40px;
+		 overflow: hidden;
+	}
+	 .timeline .timeline-centered .timeline-marker {
+		 position: absolute;
+		 left: 50%;
+		 margin-left: -7.5px;
+	}
+	 .timeline .timeline-centered .timeline-info, .timeline .timeline-centered .timeline-content {
+		 width: 50%;
+	}
+	 .timeline .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+		 float: left;
+		 text-align: right;
+		 padding-right: 30px;
+	}
+	 .timeline .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+		 float: right;
+		 text-align: left;
+		 padding-left: 30px;
+	}
+	 .timeline .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+		 float: right;
+		 text-align: left;
+		 padding-left: 30px;
+	}
+	 .timeline .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+		 float: left;
+		 text-align: right;
+		 padding-right: 30px;
+	}
+
+}
+ 

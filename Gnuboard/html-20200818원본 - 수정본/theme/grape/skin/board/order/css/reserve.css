@@ -1,0 +1,73 @@
+body 
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	background-color:White;
+}
+
+BODY,TD,th,SELECT,input,DIV,form,TEXTAREA,center,option,pre,p,blockquote,td,br
+{
+	font-family:"돋움","굴림","arial";	
+	font-size:12px;
+	color : #666;
+	line-height:16px;
+	text-decoration: none;
+}
+
+div.hr { height:2px; margin:0px; padding:0px; line-height:0px; background-color:#d7d7d7; font-size:1px; }
+
+a:link {color:#336699; text-decoration:none;}
+a:visited {color:#336699; text-decoration:none;}
+a:active {color:#336699; text-decoration:none;}
+a:hover {color:#FF7800; text-decoration:none;}
+A img { border : 0;vertical-align:middle }
+img { border : 0;vertical-align:middle }
+
+
+.sfont1 {font-size:11px; color:#999;}
+.sfont2 {font-size:8pt;font-family:돋움;color:#9A9A9A;letter-spacing:-1px;line-height:16px;}
+.strong {font-weight:bold;}
+
+input,select {vertical-align:middle;}
+	
+
+
+/* 입력폼 */
+table.write_form {width:100%; background:#d7d7d7; padding:0px; }
+table.write_form th {background:#F1F1F2; padding:0px 0px 0px 10px ; vertical-align:top; line-height:31px; text-align:left;}
+table.write_form td {padding:5px 10px 5px 10px; background:#fff; }
+table.write_form input {border:solid 1px silver; }
+table.write_form span.chk input {border:0px;}
+table.write_form span.rbl input {border:0px;}
+table.write_form td textarea { width:99%; border:1px solid silver;}
+table.write_form td .txtaralimit { width:99%; text-align:right; font-size:11px; }
+
+
+
+.tabDefault02 { text-align:left; }
+.tabDefault02 ul.tab { overflow:hidden; list-style:none; padding-left:0px; margin:0px; height:28px; }
+.tabDefault02 ul.tab li {float:left; margin-right:1px; font-size:12px; height:28px; line-height:28px; text-align:center;}
+.tabDefault02 ul.tab li.sel { padding:0px 18px 0px 18px; color:#898989; border-top:solid 1px #898989; border-left:solid 1px #898989; border-right:solid 1px #898989; cursor:pointer;  }
+.tabDefault02 ul.tab li.sel a { color:#898989; }
+.tabDefault02 ul.tab li.hide { padding:0px 18px 0px 18px; color:white; background-color:#4b4b4b; border-top:solid 1px #4b4b4b; border-left:solid 1px #4b4b4b; border-right:solid 1px #4b4b4b; cursor:pointer;  }
+.tabDefault02 ul.tab li.hide a { color:White; }
+.tabDefault02 ul.tab li.txt { float:right; font-size:11px; height:14px; line-height:14px; margin-top:10px;}
+.tabDefault02 div.cont { clear:both; border:solid 1px #4b4b4b;  }
+.tabDefault02 div.cont div.contIn { padding:10px; text-align:left; }
+.tabDefault02 div.cont2 { clear:both; border-top:solid 1px #4b4b4b; padding-top:10px; text-align:left; }
+
+div.help {border:solid 1px #dddddd; padding:10px; background-color:#eeeeee; }
+
+.btnArea {text-align:right; margin:5px 3px 5px 0px;}
+
+
+/* 버튼 */
+a.btn ,
+a.btn span {position:relative; font:12px/12px dotum; display:inline-block; text-decoration:none; background:url(../img/bg_btn.gif) left -45px; cursor:pointer; white-space:nowrap; vertical-align:middle;}
+a.btn span {left:3px; padding:8px 12px 8px 11px; color:#555; background-position:right -45px;}
+
+.guest {
+font-weight: normal;
+color: 000;
+}
