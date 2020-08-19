@@ -1926,3 +1926,14 @@ line-height: 100px;
       padding-top: -30%!important;
     }
   }
+
+
+  @media (max-width :414px){
+    .playground .viewport .tlt{
+      font-size: 40px !important;
+    }
+    .logoimg{
+      /* width: 50%; */
+    }
+
+  }
